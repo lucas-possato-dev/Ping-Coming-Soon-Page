@@ -1,0 +1,194 @@
+body, span, h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Libre Franklin";
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100vw;
+}
+
+.structure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  max-width: 70px;
+}
+
+.text h1 {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+
+.text .subscribe {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 0.875em;
+}
+
+.text .soon {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+#email {
+  padding: 15px 80px;
+  border-radius: 30px;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+#email.error {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+#email::placeholder {
+  font-family: "Libre Franklin";
+  color: hsl(223, 100%, 88%);
+  text-align: left;
+}
+
+.submit {
+  background: hsl(223, 87%, 63%);
+  padding: 15px 80px;
+  font-family: "Libre Franklin";
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard {
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.socialMedia img {
+  width: 15px;
+  padding: 10px 13px;
+  filter: invert(39%) sepia(86%) saturate(1309%) hue-rotate(208deg) brightness(98%) contrast(94%);
+}
+
+.socialMedia .border {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 50%;
+}
+
+.faceIcon img {
+  width: 10px;
+  padding: 10px 16px;
+}
+
+
+.footer {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.8em;
+}
+
+img {
+  width: 100%;
+}
+
+.errorMessage {
+  font-size: 0.7em;
+  text-align: center;
+  color: hsl(354, 100%, 66%);
+  display: none;
+}
+
+.errorMessage.error {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .structure {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .dashboard {
+    display: flex;
+    justify-content: center;
+  }
+  .dashboard img {
+    width: 45%;
+  }
+  .email {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+  .submit {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  #email {
+    padding: 15px 110px;
+  }
+  .text h1 {
+    font-size: 2.5em;
+  }
+  .text .subscribe {
+    font-size: 1.2em;
+  }
+  .errorMessage {
+    text-align: left;
+    margin-top: -5px;
+    margin-left: 20px;
+    display: none;
+  }
+}
+
+/*## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)*/
